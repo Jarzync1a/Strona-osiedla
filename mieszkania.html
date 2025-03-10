@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mieszkania</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <button class="menu-toggle">☰</button>
+      <nav id="menu">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#">☰</a></li>
+          <li class="hideOnMobile"><a href="index.html">Osiedle RAJ</a></li>
+          <li><a href="mieszkania.html">Mieszkania</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <ul>
+          <li><a href="index.html">Osiedle RAJ</a></li>
+          <li class="hideOnMobile"><a href="mieszkania.html">Mieszkania</a></li>
+          <li class="hideOnMobile"><a href="galeria.html">Galeria</a></li>
+          <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+          <li class="menu-button" onclick="showSidebar()"><a href="#">☰</a></li>
+        </ul>
+      </nav>
+
+      <script>
+        function showSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "flex";
+        }
+        function hideSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "none";
+        }
+      </script>
+    </header>
+
+    <main>
+      <div class="image-container">
+        <img src="img/A1_v2.jpg" alt="Zdjęcie 1" />
+      </div>
+      <div class="wrapper">
+        <section class="table">
+          <table>
+            <caption>
+              Ośiedle RAJ
+            </caption>
+            <tr>
+              <th>Symbol</th>
+              <th>Metraż</th>
+              <th>Status</th>
+              <th>Szczegóły</th>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B1L1</td>
+              <td data-cell="Metraż:">207,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B1L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B1L2</td>
+              <td data-cell="Metraż:">87,83m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B1L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B2L1</td>
+              <td data-cell="Metraż:">207,82m²</td>
+              <td data-cell="Status:">Dostepne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B2L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B2L2</td>
+              <td data-cell="Metraż:">87,83m²</td>
+              <td data-cell="Status:">Dostepne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B2L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B3L1</td>
+              <td data-cell="Metraż:">207,82m²</td>
+              <td data-cell="Status:">Dostepne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B3L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B3L2</td>
+              <td data-cell="Metraż:">87,83m²</td>
+              <td data-cell="Status:">Dostepne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B3L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B4L1</td>
+              <td data-cell="Metraż:">207,82m²</td>
+              <td data-cell="Status:">Dostepne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B4L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B4L2</td>
+              <td data-cell="Metraż:">87,83m²</td>
+              <td data-cell="Status:">Dostepne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B4L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B5L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostepne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B5L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B5L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B5L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B6L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B6L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B6L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B6L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B7L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B7L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B7L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B7L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B8L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B8L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B8L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B8L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B9L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B9L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B9L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B9L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B10L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B10L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B10L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B10L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B11L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B11L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B11L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B11L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B12L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B12L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B12L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B12L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B13L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B13L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B13L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B13L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B14L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B14L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B14L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B14L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B15L1</td>
+              <td data-cell="Metraż:">125,02m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B15L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B15L2</td>
+              <td data-cell="Metraż:">38,77m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B15L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B16L1</td>
+              <td data-cell="Metraż:">152,94m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B16L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B16L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B16L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B17L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B17L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B17L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B17L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B18L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B18L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B18L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B18L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B19L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B19L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B19L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B19L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B20L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B20L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B20L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B20L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B21L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B21L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B21L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B21L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B22L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B22L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B22L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B22L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B23L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B23L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B23L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B23L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B24L1</td>
+              <td data-cell="Metraż:">152,94m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B24L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B24L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B24L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B25L1</td>
+              <td data-cell="Metraż:">125,02m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B25L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B25L2</td>
+              <td data-cell="Metraż:">38,77m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B25L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B26L1</td>
+              <td data-cell="Metraż:">125,02m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B26L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B26L2</td>
+              <td data-cell="Metraż:">38,77m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B26L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B27L1</td>
+              <td data-cell="Metraż:">125,02m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B27L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B27L2</td>
+              <td data-cell="Metraż:">38,77m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B27L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B28L1</td>
+              <td data-cell="Metraż:">125,02m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B28L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B28L2</td>
+              <td data-cell="Metraż:">38,77m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B28L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B29L1</td>
+              <td data-cell="Metraż:">125,02m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B29L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B29L2</td>
+              <td data-cell="Metraż:">38,77m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B29L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B30L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B30L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B30L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B30L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B31L1</td>
+              <td data-cell="Metraż:">125,02m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B31L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B31L2</td>
+              <td data-cell="Metraż:">38,77m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B31L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B32L1</td>
+              <td data-cell="Metraż:">152,11m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B32L1.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Symbol:">B32L2</td>
+              <td data-cell="Metraż:">56,82m²</td>
+              <td data-cell="Status:">Dostępne</td>
+              <td data-cell="Szczegóły:">
+                <a href="pdf/B32L2.pdf" target="_blank"
+                  ><button>Wgląd PDF</button></a
+                >
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>Footer text</p>
+      </div>
+    </footer>
+  </body>
+</html>

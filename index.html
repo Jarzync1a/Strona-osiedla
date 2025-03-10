@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osiedle RAJ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <button class="menu-toggle">☰</button>
+        <nav id="menu">
+          <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#">☰</a></li>
+            <li class="hideOnMobile"><a href="index.html">Osiedle RAJ</a></li>
+            <li><a href="mieszkania.html">Mieszkania</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html">Osiedle RAJ</a></li>
+
+            <li class="hideOnMobile">
+              <a href="mieszkania.html">Mieszkania</a>
+            </li>
+            <li class="hideOnMobile"><a href="galeria.html">Galeria</a></li>
+            <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#">☰</a>
+            </li>
+          </ul>
+        </nav>
+
+        <script>
+          function showSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+          }
+          function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+          }
+        </script>
+      </header>
+
+      <main>
+        <!-- Sekcja pierwszego zdjęcia -->
+        <div class="main_img">
+          <div class="image-container">
+            <img src="img/A1__4.jpg" alt="Zdjęcie 1" />
+            <div class="text">
+              <p>Osiedle RAJ przy Rezerwacie Jaskini Raj</p>
+              <p>w Gminie Chęciny.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Sekcja pierwszego tekstu -->
+        <div class="text-section">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
+            tortor vel nibh cursus posuere nec non felis. Aenean vestibulum
+            purus metus, nec mollis velit consequat dapibus. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Phasellus condimentum nisi
+            eros, non malesuada lorem tincidunt bibendum.
+          </p>
+        </div>
+
+        <!-- Sekcja zdjęcia i tekstu obok siebie -->
+        <div class="content-wrapper">
+          <div class="image-container2">
+            <img src="img/A12.jpg" alt="Zdjęcie 2" />
+          </div>
+          <div class="text-section">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              ut tortor vel nibh cursus posuere nec non felis. Aenean vestibulum
+              purus metus, nec mollis velit consequat dapibus. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Phasellus condimentum nisi
+              eros, non malesuada lorem tincidunt bibendum. Aenean vitae sapien
+              finibus, feugiat dui id, accumsan nisl. Quisque sed nibh et nisi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sekcja końcowego tekstu -->
+        <div class="text-section">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
+            tortor vel nibh cursus posuere nec non felis. Aenean vestibulum
+            purus metus, nec mollis velit consequat dapibus. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Phasellus condimentum nisi
+            eros, non malesuada lorem tincidunt bibendum.
+          </p>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-container">
+          <p>Footer text</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

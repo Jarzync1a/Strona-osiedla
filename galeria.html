@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <button class="menu-toggle">☰</button>
+      <nav id="menu">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#">☰</a></li>
+          <li class="hideOnMobile"><a href="index.html">Osiedle RAJ</a></li>
+          <li><a href="mieszkania.html">Mieszkania</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <ul>
+          <li><a href="index.html">Osiedle RAJ</a></li>
+          <li class="hideOnMobile"><a href="mieszkania.html">Mieszkania</a></li>
+          <li class="hideOnMobile"><a href="galeria.html">Galeria</a></li>
+          <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+          <li class="menu-button" onclick="showSidebar()"><a href="#">☰</a></li>
+        </ul>
+      </nav>
+
+      <script>
+        function showSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "flex";
+        }
+        function hideSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "none";
+        }
+      </script>
+    </header>
+
+    <main>
+      <div class="image-container">
+        <img src="img/A1_v2.jpg" alt="Zdjęcie 1" />
+      </div>
+      <div class="main_said">Zdjęcia Osiedla</div>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            src="img/A1.jpg"
+            alt="Zdjęcie 1"
+            onclick="openLightbox('img/A1.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A2.jpg"
+            alt="Zdjęcie 2"
+            onclick="openLightbox('img/A2.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A3.jpg"
+            alt="Zdjęcie 3"
+            onclick="openLightbox('img/A3.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A4.jpg"
+            alt="Zdjęcie 4"
+            onclick="openLightbox('img/A4.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A5.jpg"
+            alt="Zdjęcie 5"
+            onclick="openLightbox('img/A5.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A6.jpg"
+            alt="Zdjęcie 6"
+            onclick="openLightbox('img/A6.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A7.jpg"
+            alt="Zdjęcie 7"
+            onclick="openLightbox('img/A7.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A8.jpg"
+            alt="Zdjęcie 8"
+            onclick="openLightbox('img/A8.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A9.jpg"
+            alt="Zdjęcie 9"
+            onclick="openLightbox('img/A9.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A10.jpg"
+            alt="Zdjęcie 10"
+            onclick="openLightbox('img/A10.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A11.jpg"
+            alt="Zdjęcie 11"
+            onclick="openLightbox('img/A11.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A12.jpg"
+            alt="Zdjęcie 12"
+            onclick="openLightbox('img/A12.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A13.jpg"
+            alt="Zdjęcie 13"
+            onclick="openLightbox('img/A13.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A14.jpg"
+            alt="Zdjęcie 14"
+            onclick="openLightbox('img/A14.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A15.jpg"
+            alt="Zdjęcie 15"
+            onclick="openLightbox('img/A15.jpg')"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/A16.jpg"
+            alt="Zdjęcie 16"
+            onclick="openLightbox('img/A16.jpg')"
+          />
+        </div>
+      </div>
+      <div class="main_said">Mapa do celów projektowych</div>
+
+      <div class="map">
+        <a href="PZT_2_2025.01.16-podpisany.pdf" target="_blank">
+          <button>Wgląd Mapy do celów projektowych PDF</button>
+        </a>
+      </div>
+
+      <!-- Lightbox - podgląd zdjęcia -->
+      <div id="lightbox" class="lightbox">
+        <div id="lightbox-container">
+          <img id="lightbox-img" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>Footer text</p>
+      </div>
+    </footer>
+  </body>
+</html>
