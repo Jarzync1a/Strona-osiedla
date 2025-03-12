@@ -41,6 +41,25 @@
             const sidebar = document.querySelector(".sidebar");
             sidebar.style.display = "none";
           }
+          document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(
+              ".text-section, .image-container2, .content-wrapper"
+            );
+
+            const observer = new IntersectionObserver((entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.style.animation =
+                    "growFadeIn 0.5s ease-out forwards";
+                  observer.unobserve(entry.target); // Stop observing once the animation is applied
+                }
+              });
+            });
+
+            elements.forEach((element) => {
+              observer.observe(element);
+            });
+          });
         </script>
       </header>
 
@@ -58,14 +77,13 @@
         <!-- Sekcja pierwszego tekstu -->
         <div class="text-section">
           <p>
+            OSIEDLE RAJ Z DUSZĄ
+            <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
             tortor vel nibh cursus posuere nec non felis. Aenean vestibulum
-            purus metus, nec mollis velit consequat dapibus. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Phasellus condimentum nisi
-            eros, non malesuada lorem tincidunt bibendum.
+            purus metus, nec mollis velit consequat dapibus.
           </p>
         </div>
-
         <!-- Sekcja zdjęcia i tekstu obok siebie -->
         <div class="content-wrapper">
           <div class="image-container2">
@@ -73,6 +91,8 @@
           </div>
           <div class="text-section">
             <p>
+              PRZYJEMNE OTOCZENIE
+              <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               ut tortor vel nibh cursus posuere nec non felis. Aenean vestibulum
               purus metus, nec mollis velit consequat dapibus. Lorem ipsum dolor
@@ -82,7 +102,23 @@
             </p>
           </div>
         </div>
-
+        <div class="content-wrapper">
+          <div class="image-container2">
+            <img src="img/mapa_osiedla.jpg" alt="Zdjęcie 3" />
+          </div>
+          <div class="text-section">
+            <p>
+              MAPA OSIEDLA
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              ut tortor vel nibh cursus posuere nec non felis. Aenean vestibulum
+              purus metus, nec mollis velit consequat dapibus. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Phasellus condimentum nisi
+              eros, non malesuada lorem tincidunt bibendum. Aenean vitae sapien
+              finibus, feugiat dui id, accumsan nisl. Quisque sed nibh et nisi.
+            </p>
+          </div>
+        </div>
         <!-- Sekcja końcowego tekstu -->
         <div class="text-section">
           <p>

@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
 }
 
-body > .min-h-[100dvb] {
+body > .min-h-100dvb {
   flex: 1;
 }
 
@@ -161,7 +161,7 @@ nav ul li a:hover::after {
 
 /* Styl tekstowych sekcji */
 .text-section {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(36, 36, 36);
   color: white;
   padding: 30px;
   border-radius: 10px;
@@ -170,6 +170,12 @@ nav ul li a:hover::after {
   max-width: 800px;
   text-align: center;
   font-family: Arial, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .map {
@@ -451,24 +457,6 @@ tr:hover {
   }
 }
 
-.text-section {
-  background-color: rgb(40, 40, 40);
-  color: white;
-  padding: 30px;
-  border-radius: 10px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 800px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.text-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
 /* Lepsze skalowanie Lightboxa na telefonach */
 @media (max-width: 768px) {
   .lightbox img {
@@ -628,4 +616,68 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(40, 40, 40); /* Shared background color */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.image-container2 {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-container2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-section {
+  flex: 1;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container2 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Define keyframes for the grow and fade-in animation */
+@keyframes growFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the desired elements */
+.text-section,
+.image-container2,
+.content-wrapper {
+  animation: appear 5s linear;
+  animation-timeline: view();
 }
