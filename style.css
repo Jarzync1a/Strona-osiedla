@@ -233,8 +233,7 @@ footer {
   font-family: Arial, sans-serif;
 }
 
-.contact-info,
-.contact-description {
+.contact-info {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 12px;
@@ -243,8 +242,7 @@ footer {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-info:hover,
-.contact-description:hover {
+.contact-info:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -267,8 +265,7 @@ footer {
     flex-wrap: nowrap;
   }
 
-  .contact-info,
-  .contact-description {
+  .contact-info {
     flex: 1;
     max-width: calc(50% - 15px);
   }
@@ -338,8 +335,8 @@ footer {
 
 /* Powiększone zdjęcie */
 .lightbox img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 0%;
+  max-height: 1000%;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
   transform-origin: center;
@@ -630,6 +627,38 @@ footer {
   max-width: 1200px;
 }
 
+.small-image-container {
+  position: relative;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.small-image-container img {
+  width: 50%;
+  height: auto;
+  max-width: 100px; /* Adjust the size of the images */
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 40%;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .small-image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 .image-container2 {
   flex: 1;
   margin-right: 20px;
@@ -680,4 +709,19 @@ footer {
 .content-wrapper {
   animation: appear 5s linear;
   animation-timeline: view();
+}
+
+/* Ensure the elements are hidden initially */
+.gallery-item,
+.contact {
+  opacity: 0; /* Start with hidden elements */
+  transform: scale(0.8); /* Start with smaller size */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Apply the animation to the desired elements */
+.gallery-item.animated,
+.contact.animated {
+  opacity: 1;
+  transform: scale(1);
 }
